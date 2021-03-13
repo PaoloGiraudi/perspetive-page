@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #F4F2EA;
+  color: #111;
+}
+
+.bg,
+.bg2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.bg {
+  clip-path: ellipse(50% 100% at 100% 70%);
+  z-index: -2;
+  background-color: #402012;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+  height: auto;
+  align-self: center;
+  margin: 0 50px;
+}
+
+ul {
+  list-style: none;
+  perspective: 1500px;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 20% auto;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transform: rotateY(-30deg) rotateX(15deg);
+  position: absolute;
+}
+
+ul li:nth-child(1) {
+  background-color: #cab2b2;
+  top: -120px;
+  z-index: 2;
+}
+
+ul li:nth-child(2) {
+  background-color: #c1d4c1;
+  z-index: 1;
+}
+
+ul li:nth-child(3) {
+  background-color: #d9ce9f;
+  top: 120px;
+}
+
+ul li:hover {
+  transform: rotateY(-22deg) rotateX(0deg) scale(1.02);
+  transition: transform 0.4s ease-out;
+  z-index: 3;
+  mix-blend-mode: normal;
+}
+
+img {
+  width: 60px;
+  align-self: center;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-top: 0;
+}
+
+strong {
+  font-size: 1.2rem;
+}
+
+#left > p {
+  color: #402012;
+  line-height: 1.5rem;
+}
